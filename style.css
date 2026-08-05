@@ -2710,7 +2710,7 @@ video {
 
   .hero-section {
     min-height: 0;
-    padding: 112px 0 64px;
+    padding: 112px 0 0;
     overflow: visible;
     justify-content: flex-start;
     background: transparent;
@@ -2753,7 +2753,7 @@ video {
 
   .hero-subtitle {
     max-width: 500px;
-    margin: 0 auto 26px;
+    margin: 0 auto 50px;
     padding: 0;
     font-size: clamp(.92rem, 3.8vw, 1rem);
     line-height: 1.55;
@@ -2761,8 +2761,8 @@ video {
   }
 
   .hero-cta-group {
-    width: 100%;
-    max-width: 430px;
+    width: min(78%, 320px);
+    max-width: 320px;
     margin: 0 auto;
   }
 
@@ -2953,7 +2953,7 @@ video {
 
   .hero-section {
     padding-top: 102px;
-    padding-bottom: 54px;
+    padding-bottom: 0;
   }
 
   .hero-container,
