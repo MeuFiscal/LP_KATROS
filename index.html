@@ -6,16 +6,12 @@
   <title>Katros | A Revolução Inteligente e Conversacional para Barbearias</title>
   <meta name="description" content="Transforme sua barbearia com o Katros: agendamento inteligente via Chat 24/7, gestão automática de comissões, Clube de Assinaturas e controle financeiro completo.">
   
-  <!-- Google Fonts: Inter & Host Grotesk / Outfit -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Lucide Icons via CDN -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Critical resources hosted locally for faster first render -->
+  <link rel="preload" href="assets/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/logo-320.png" as="image" type="image/png" fetchpriority="high">
   
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css?v=16">
+  <link rel="stylesheet" href="style.css?v=17">
 </head>
 <body>
   <!-- Global Page Background FX (Hero Effect Across Entire Page) -->
@@ -32,7 +28,7 @@
   <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#" class="brand-logo">
-        <img src="logo.png" alt="Katros Logo" class="brand-logo-img" style="height: 36px; width: auto; max-width: 160px; object-fit: contain;">
+        <img src="assets/logo-320.png" alt="Katros Logo" class="brand-logo-img" width="320" height="96" decoding="async" fetchpriority="high" style="height: 36px; width: auto; max-width: 160px; object-fit: contain;">
       </a>
 
       <nav class="nav-links" aria-label="Navegação Principal">
@@ -67,7 +63,7 @@
 
       <div class="hero-container">
         <div class="hero-brand-title">
-          <img src="logo.png" alt="Katros" class="hero-brand-img" style="height: 40px; width: auto; max-width: 180px; object-fit: contain;">
+          <img src="assets/logo-320.png" alt="Katros" class="hero-brand-img" width="320" height="96" decoding="async" fetchpriority="high" style="height: 40px; width: auto; max-width: 180px; object-fit: contain;">
         </div>
 
         <h1 class="hero-title">
@@ -221,7 +217,7 @@
               <div class="phone-header">
                 <div class="phone-barbershop-info">
                   <div class="phone-avatar">
-                    <img src="logo.png" alt="Katros">
+                    <img src="assets/logo-320.png" alt="Katros" width="320" height="96" loading="lazy" decoding="async">
                   </div>
                   <div>
                     <span class="phone-eyebrow">ASSISTENTE KATROS</span>
@@ -464,7 +460,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#" class="brand-logo">
-            <img src="logo.png" alt="Katros Logo" class="brand-logo-img" style="height: 36px; width: auto; max-width: 160px; object-fit: contain;">
+            <img src="assets/logo-320.png" alt="Katros Logo" class="brand-logo-img" width="320" height="96" loading="lazy" decoding="async" style="height: 36px; width: auto; max-width: 160px; object-fit: contain;">
           </a>
           <p class="footer-desc">
             O ecossistema definitivo de ERP & CRM conversacional para barbearias modernas. Tecnologia de ponta, agendamento interativo 24/7 e gestão simplificada.
@@ -552,7 +548,25 @@
     </div>
   </dialog>
 
+  <!-- Icons load after the critical page content instead of blocking rendering -->
+  <script>
+    (() => {
+      const loadIcons = () => {
+        if (window.lucide) return window.lucide.createIcons();
+        const script = document.createElement('script');
+        script.src = 'assets/lucide.min.js';
+        script.onload = () => window.lucide?.createIcons();
+        document.head.appendChild(script);
+      };
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadIcons, { timeout: 1200 });
+      } else {
+        setTimeout(loadIcons, 250);
+      }
+    })();
+  </script>
+
   <!-- Custom JavaScript -->
-  <script src="script.js?v=8"></script>
+  <script src="script.js?v=9" defer></script>
 </body>
 </html>

@@ -301,7 +301,7 @@ function initInteractiveChatSimulator() {
   function appendBotMessage(text) {
     const row = document.createElement('div');
     row.className = 'chat-message-row bot-row';
-    row.innerHTML = `<div class="chat-mini-avatar"><img src="logo.png" alt=""></div><div><div class="chat-bubble chat-bubble-bot">${text}</div><span class="chat-time">agora</span></div>`;
+    row.innerHTML = `<div class="chat-mini-avatar"><img src="assets/logo-320.png" alt=""></div><div><div class="chat-bubble chat-bubble-bot">${text}</div><span class="chat-time">agora</span></div>`;
     messagesContainer.appendChild(row);
     scrollToBottom();
   }
@@ -322,7 +322,7 @@ function initInteractiveChatSimulator() {
     const token = messageSequence;
     const typing = document.createElement('div');
     typing.className = 'chat-message-row bot-row chat-typing-row';
-    typing.innerHTML = `<div class="chat-mini-avatar"><img src="logo.png" alt=""></div><div class="chat-bubble chat-bubble-bot typing-bubble"><i></i><i></i><i></i></div>`;
+    typing.innerHTML = `<div class="chat-mini-avatar"><img src="assets/logo-320.png" alt=""></div><div class="chat-bubble chat-bubble-bot typing-bubble"><i></i><i></i><i></i></div>`;
     messagesContainer.appendChild(typing);
     scrollToBottom();
     setTimeout(() => {

@@ -2,6 +2,14 @@
    Katros | Design System & Vanilla CSS (Katros Dark Identity)
    ========================================================================== */
 
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('assets/outfit-latin.woff2') format('woff2');
+}
+
 :root {
   /* Katros Dark Mode Palette (Photo 2 Aesthetic) */
   --bg-app: #02050E;
@@ -76,6 +84,18 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Skip layout and paint work for sections that are still below the viewport. */
+.showcase-section,
+.simulator-section,
+.advantages-section,
+.pricing-section,
+.faq-section,
+.cta-section,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 }
 
 /* Custom Scrollbar */
@@ -2633,8 +2653,7 @@ video {
   }
 
   .ambient-glow {
-    opacity: .45;
-    filter: blur(110px);
+    display: none;
   }
 
   .page-global-grid {
@@ -2928,6 +2947,17 @@ video {
     gap: 10px;
     font-size: .72rem;
     text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
   }
 }
 
