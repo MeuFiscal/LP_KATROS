@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katros | A Revolução Inteligente e Conversacional para Barbearias</title>
+  <meta name="description" content="Transforme sua barbearia com o Katros: agendamento inteligente via Chat 24/7, gestão automática de comissões, Clube de Assinaturas e controle financeiro completo.">
+  
+  <!-- Google Fonts: Inter & Host Grotesk / Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css?v=15">
+</head>
+<body>
+  <!-- Global Page Background FX (Hero Effect Across Entire Page) -->
+  <div class="page-bg-global" aria-hidden="true">
+    <div class="page-global-grid"></div>
+    <div class="ambient-glow glow-top"></div>
+    <div class="ambient-glow glow-mid-1"></div>
+    <div class="ambient-glow glow-mid-2"></div>
+    <div class="ambient-glow glow-mid-3"></div>
+    <div class="ambient-glow glow-bottom"></div>
+  </div>
+
+  <!-- Floating Glass Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <img src="logo.png" alt="Katros Logo" class="brand-logo-img" style="height: 36px; width: auto; max-width: 160px; object-fit: contain;">
+      </a>
+
+      <nav class="nav-links" aria-label="Navegação Principal">
+        <a href="#recursos" class="nav-link">Recursos</a>
+        <a href="#simulador" class="nav-link nav-link-highlight">
+          <i data-lucide="sparkles" class="w-4 h-4"></i> Simulador ao Vivo
+        </a>
+        <a href="#vantagens" class="nav-link">Vantagens</a>
+        <a href="#planos" class="nav-link">Planos e Preços</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#planos" class="btn btn-primary btn-glow sm-hidden" aria-label="Ver planos">
+          <span class="desktop-cta-label">Começar Agora</span>
+          <span class="mobile-cta-label">Ver planos</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (EXACT MATCH PHOTO 2) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-fx" aria-hidden="true">
+        <div class="ambient-glow-top"></div>
+        <div class="ambient-glow-left"></div>
+        <div class="ambient-glow-right"></div>
+        <div class="vertical-grid-lines"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-brand-title">
+          <img src="logo.png" alt="Katros" class="hero-brand-img" style="height: 40px; width: auto; max-width: 180px; object-fit: contain;">
+        </div>
+
+        <h1 class="hero-title">
+          Chega de perder clientes pra concorrência<br class="sm-break"> por não responder o WhatsApp
+        </h1>
+
+        <p class="hero-subtitle">
+          Com a <strong class="text-white font-medium">Katros</strong>, seu <strong class="text-white font-medium">cliente agenda sozinho</strong>, na hora<br class="sm-break"> que quiser, rápido, sem espera e sem depender de<br class="sm-break"> você estar de mão livre pra responder.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#planos" class="hero-start-btn">
+            <span class="start-btn-icon"><i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></span>
+            <span class="start-btn-text">Começar hoje mesmo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECURSOS DO APP (SHOWCASE) -->
+    <section class="section showcase-section" id="recursos">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Tudo o que sua barbearia precisa</span>
+          <h2 class="section-title">Um Sistema Feito por Quem Entende de Barbearia</h2>
+          <p class="section-subtitle">
+            Diferente de sistemas genéricos e complexos, o Katros foi desenhado para ser intuitivo tanto para o cliente que agenda em 10 segundos quanto para o dono que quer lucro no bolso.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1: Chat interativo -->
+          <div class="feature-card">
+            <div class="feature-icon bg-blue-glow">
+              <i data-lucide="message-circle" class="w-6 h-6 text-blue"></i>
+            </div>
+            <h3 class="feature-title">Chat Conversacional Sem Baixar App</h3>
+            <p class="feature-text">
+              Seu cliente acessa o link exclusivo da barbearia (`/sua-barbearia`) ou escaneia o QR Code e é atendido instantaneamente por um chat interativo, escolhendo serviço, barbeiro e horário de forma fluida.
+            </p>
+            <div class="feature-preview-tag">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald"></i>
+              <span>Agendamento em menos de 15 segundos</span>
+            </div>
+          </div>
+
+          <!-- Feature 2: Clube de Assinatura -->
+          <div class="feature-card">
+            <div class="feature-icon bg-emerald-glow">
+              <i data-lucide="crown" class="w-6 h-6 text-emerald"></i>
+            </div>
+            <h3 class="feature-title">Clube de Assinaturas (Planos Mensais)</h3>
+            <p class="feature-text">
+              Monte planos recorrentes para seus clientes (ex: "Cabelo e Barba VIP por R$ 99/mês"). Garanta receita previsível todos os meses com controle de cortes e renovação.
+            </p>
+            <div class="feature-preview-tag">
+              <i data-lucide="trending-up" class="w-4 h-4 text-emerald"></i>
+              <span>Receita recorrente e previsível</span>
+            </div>
+          </div>
+
+          <!-- Feature 3: Comissões Automáticas -->
+          <div class="feature-card">
+            <div class="feature-icon bg-blue-glow">
+              <i data-lucide="calculator" class="w-6 h-6 text-blue"></i>
+            </div>
+            <h3 class="feature-title">Comissões & Fechamento em 1 Clique</h3>
+            <p class="feature-text">
+              Configure porcentagens individuais para cada barbeiro. O sistema calcula automaticamente o quanto cada profissional tem a receber diária, semanal ou mensalmente.
+            </p>
+            <div class="feature-preview-tag">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-blue"></i>
+              <span>Cálculo 100% automático e sem erros</span>
+            </div>
+          </div>
+
+          <!-- Feature 4: Estoque & Vendas -->
+          <div class="feature-card">
+            <div class="feature-icon bg-purple-glow">
+              <i data-lucide="package" class="w-6 h-6 text-purple"></i>
+            </div>
+            <h3 class="feature-title">Controle de Estoque & Produtos</h3>
+            <p class="feature-text">
+              Acompanhe pomadas, balms, bebidas e lâminas com alertas inteligentes de estoque mínimo e relatórios precisos do custo e lucro de cada item vendido.
+            </p>
+            <div class="feature-preview-tag">
+              <i data-lucide="shield-check" class="w-4 h-4 text-purple"></i>
+              <span>Alertas de estoque mínimo em tempo real</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR INTERATIVO DO CHAT (THE WOW CENTERPIECE) -->
+    <section class="section simulator-section" id="simulador">
+      <div class="section-container">
+        <div class="simulator-wrapper">
+          <div class="simulator-content">
+            <span class="section-tag bg-blue-glow text-blue">Experiência ao Vivo</span>
+            <h2 class="section-title">Teste o Chat de Agendamento Agora Mesmo</h2>
+            <p class="section-subtitle">
+              Sinta na pele a facilidade com que seus clientes vão agendar com você. Nosso chat guia o cliente passo a passo sem complicação, sem formulários chatos e com respostas instantâneas.
+            </p>
+
+            <div class="simulator-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i data-lucide="smartphone" class="w-5 h-5"></i></div>
+                <div>
+                  <h4>100% Responsivo no Celular e Desktop</h4>
+                  <p>Funciona perfeitamente em qualquer navegador e tela, sem necessidade de baixar nada nas lojas de aplicativos.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i data-lucide="zap" class="w-5 h-5"></i></div>
+                <div>
+                  <h4>Prevenção Inteligente de Conflitos</h4>
+                  <p>O algoritmo bloqueia horários já ocupados em tempo real, evitando agendamentos duplicados.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i data-lucide="calendar-check" class="w-5 h-5"></i></div>
+                <div>
+                  <h4>Confirmação com Lembrete</h4>
+                  <p>O cliente recebe o resumo imediato do agendamento com opção de salvar no calendário e receber alerta via WhatsApp.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="simulator-controls mt-6">
+              <button id="btn-reset-chat" class="btn btn-outline">
+                <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+                <span>Reiniciar Simulação do Chat</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Smartphone Mockup — experiência inspirada no chat real Katros/BarbeFlow -->
+          <div class="phone-mockup-container">
+            <div class="phone-orbit phone-orbit-one"></div>
+            <div class="phone-orbit phone-orbit-two"></div>
+            <span class="phone-floating-badge badge-fast"><i data-lucide="zap"></i> Agenda em segundos</span>
+            <span class="phone-floating-badge badge-live"><span class="status-dot-pulse"></span> Demonstração ao vivo</span>
+            <div class="phone-mockup">
+              <div class="phone-side-button phone-side-button-one"></div>
+              <div class="phone-side-button phone-side-button-two"></div>
+              <div class="phone-dynamic-island"><span class="island-camera"></span></div>
+              
+              <!-- Phone Header -->
+              <div class="phone-header">
+                <div class="phone-barbershop-info">
+                  <div class="phone-avatar">
+                    <img src="logo.png" alt="Katros">
+                  </div>
+                  <div>
+                    <span class="phone-eyebrow">ASSISTENTE KATROS</span>
+                    <h4 class="phone-title">Barbearia VIP Lounge</h4>
+                    <span class="phone-status"><span class="status-dot-pulse"></span> Online agora</span>
+                  </div>
+                </div>
+                <button class="phone-header-action" aria-label="Mais opções"><i data-lucide="more-horizontal"></i></button>
+              </div>
+
+              <!-- Phone Chat Body -->
+              <div class="phone-chat-body" id="chat-messages">
+                <!-- Messages injected dynamically via JS -->
+              </div>
+
+              <!-- Phone Input Footer (Interactive options) -->
+              <div class="phone-footer" id="chat-actions">
+                <!-- Action buttons injected dynamically via JS -->
+              </div>
+              <div class="phone-home-indicator"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VANTAGENS EXCLUSIVAS -->
+    <section class="section advantages-section" id="vantagens">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Por que escolher o Katros?</span>
+          <h2 class="section-title">A Vantagem Competitiva da Sua Barbearia</h2>
+          <p class="section-subtitle">
+            Desenvolvido com a moderna arquitetura Katros, nosso sistema garante velocidade máxima, segurança bancária e uma identidade de luxo que eleva a percepção de valor da sua barbearia.
+          </p>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="advantage-item">
+            <div class="adv-number">01</div>
+            <h3>Identidade Visual Dark & Premium</h3>
+            <p>Seus clientes se impressionam com um design elegante, moderno e escuro, transmitindo profissionalismo, sofisticação e alto padrão.</p>
+          </div>
+          <div class="advantage-item">
+            <div class="adv-number">02</div>
+            <h3>Painel do Dono vs. Painel do Barbeiro</h3>
+            <p>Controle permissões de acesso com segurança. Barbeiros visualizam apenas suas próprias agendas e comissões; você tem visão total do faturamento.</p>
+          </div>
+          <div class="advantage-item">
+            <div class="adv-number">03</div>
+            <h3>Relatórios Financeiros Cristalinos</h3>
+            <p>Gráficos interativos em tempo real mostrando ticket médio, serviços mais vendidos, clientes mais fiéis e projeção de receita do mês.</p>
+          </div>
+          <div class="advantage-item">
+            <div class="adv-number">04</div>
+            <h3>Suporte Dedicado e Humanizado</h3>
+            <p>Esqueça os robôs que não resolvem nada. Nossa equipe técnica atende você e sua equipe diretamente pelo WhatsApp com prioridade máxima.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS E PREÇOS (EXACT PLANS WITHOUT TRIAL/TESTE) -->
+    <section class="section pricing-section" id="planos">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Investimento transparente</span>
+          <h2 class="section-title">Escolha o Plano Ideal para o Seu Momento</h2>
+          <p class="section-subtitle">
+            Planos sem fidelidade abusiva, com todos os recursos ativados para impulsionar o seu negócio desde o primeiro dia.
+          </p>
+          
+          <div class="pricing-toggle-wrapper">
+            <span class="toggle-label active" id="label-monthly">Mensal</span>
+            <button class="toggle-switch" id="billing-toggle" aria-label="Alternar faturamento mensal e anual">
+              <span class="toggle-slider"></span>
+            </button>
+            <span class="toggle-label" id="label-yearly">Anual <span class="discount-badge">-20% OFF</span></span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- PLANO 1: MENSAL (SOLO / BÁSICO) -->
+          <div class="pricing-card" data-plan="mensal">
+            <div class="card-top">
+              <span class="plan-name">Plano Mensal</span>
+              <p class="plan-desc">Ideal para barbeiro autônomo ou proprietário que atende sozinho e busca controle total.</p>
+              <div class="plan-price">
+                <span class="currency">R$</span>
+                <span class="amount" data-monthly="17" data-yearly="13" data-monthly-cents=",00" data-yearly-cents=",60">17</span>
+                <span class="cents">,00</span>
+                <span class="period">/30 dias</span>
+              </div>
+              <span class="billing-note" data-monthly-note="Faturado a cada 30 dias" data-yearly-note="Faturado R$ 163,20 no plano anual (-20%)">Faturado a cada 30 dias</span>
+            </div>
+
+            <div class="card-features">
+              <span class="features-header">Benefícios inclusos:</span>
+              <ul class="features-list">
+                <li><i data-lucide="check-circle-2" class="icon-check"></i> <span>Todas as funções e recursos do app</span></li>
+                <li><i data-lucide="check-circle-2" class="icon-check"></i> <span>1 Profissional (Proprietário assinante)</span></li>
+                <li><i data-lucide="check-circle-2" class="icon-check"></i> <span>Agendamento online 24/7 com link exclusivo</span></li>
+                <li><i data-lucide="check-circle-2" class="icon-check"></i> <span>Controle financeiro, caixa e comissões</span></li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+              <a href="https://pay.cakto.com.br/3bbcsxx_982069" target="_blank" class="btn btn-outline btn-full">
+                <span>Assinar Plano Mensal</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- PLANO 2: TREE (RECOMENDADO) -->
+          <div class="pricing-card pricing-card-featured" data-plan="tree">
+            <div class="featured-ribbon">
+              <i data-lucide="crown" class="w-4 h-4"></i>
+              <span>RECOMENDADO</span>
+            </div>
+
+            <div class="card-top">
+              <span class="plan-name text-gradient">Plano Tree</span>
+              <p class="plan-desc">Perfeito para barbearias em expansão que querem gerenciar a equipe com máxima eficiência.</p>
+              <div class="plan-price">
+                <span class="currency">R$</span>
+                <span class="amount text-gradient" data-monthly="37" data-yearly="29" data-monthly-cents=",00" data-yearly-cents=",60">37</span>
+                <span class="cents">,00</span>
+                <span class="period">/30 dias</span>
+              </div>
+              <span class="billing-note" data-monthly-note="Faturado a cada 30 dias" data-yearly-note="Faturado R$ 355,20 no plano anual (-20%)">Faturado a cada 30 dias</span>
+            </div>
+
+            <div class="card-features">
+              <span class="features-header">Tudo do Plano Mensal + vantagens exclusivas:</span>
+              <ul class="features-list">
+                <li><i data-lucide="check-circle-2" class="icon-check text-emerald"></i> <span>Todas as funções e recursos do app</span></li>
+                <li><i data-lucide="check-circle-2" class="icon-check text-emerald"></i> <span><strong>Até 3 Profissionais cadastrados</strong></span></li>
+                <li><i data-lucide="check-circle-2" class="icon-check text-emerald"></i> <span>Agenda inteligente multiprofissional com link único</span></li>
+                <li><i data-lucide="check-circle-2" class="icon-check text-emerald"></i> <span>Gestão avançada de comissões por barbeiro e vales</span></li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+              <a href="https://pay.cakto.com.br/82fe2zv" target="_blank" class="btn btn-primary btn-glow btn-full">
+                <span>Assinar Plano Tree</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section faq-section" id="faq">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Tire suas dúvidas</span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-subtitle">Tudo o que você precisa saber antes de transformar a gestão da sua barbearia.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como funciona o agendamento via Chat do Katros?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>O Katros disponibiliza um link personalizado da sua barbearia e um QR Code. Quando o cliente clica no link, ele é direcionado a um chat interativo super intuitivo onde escolhe o serviço, o barbeiro de preferência e o horário disponível em poucos segundos, sem precisar baixar nenhum aplicativo no celular.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como funciona o cadastro de equipe no Plano Tree?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>No Plano Tree, você cadastra até 3 profissionais com agendas individuais interligadas no mesmo link exclusivo da sua barbearia. Cada barbeiro tem seu controle de serviços e comissões calculado de forma automática.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como funciona o cálculo automático de comissões?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>No painel administrativo, você define a porcentagem de comissão de cada profissional (ou valor fixo por serviço). Conforme os agendamentos são realizados e concluídos, o Katros calcula automaticamente o saldo a pagar para cada barbeiro, separando custos de produtos e gerando o relatório de fechamento de caixa em um clique.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Os clientes recebem lembrete no WhatsApp antes do horário?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Nosso sistema envia lembretes e notificações automáticas via WhatsApp para o cliente antes do horário agendado, confirmando a presença e diminuindo drasticamente os buracos na agenda e faltas imprevistas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Posso mudar de plano ou cancelar a qualquer momento?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Com certeza. Não exigimos fidelidade ou multas de cancelamento. Você pode fazer o upgrade ou downgrade do seu plano diretamente pelo painel de administração ou solicitar pelo suporte a qualquer momento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA BANNER -->
+    <section class="final-cta-section">
+      <div class="section-container">
+        <div class="final-cta-card">
+          <div class="ambient-glow glow-cta" aria-hidden="true"></div>
+          <div class="cta-content">
+            <h2 class="cta-title">Pronto para Levar sua Barbearia ao Próximo Nível?</h2>
+            <p class="cta-text">
+              Junte-se a centenas de barbearias que automatizaram seus agendamentos, eliminaram faltas e aumentaram seu lucro com o Katros.
+            </p>
+            <div class="cta-buttons">
+              <a href="#planos" class="btn btn-primary btn-lg btn-glow">
+                <span>Escolher Meu Plano Agora</span>
+                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+              </a>
+              <a href="https://wa.me/5544999419907?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Katros" target="_blank" class="btn btn-outline btn-lg">
+                <i data-lucide="message-circle" class="w-5 h-5 text-emerald"></i>
+                <span>Falar no WhatsApp (44) 99941-9907</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <img src="logo.png" alt="Katros Logo" class="brand-logo-img" style="height: 36px; width: auto; max-width: 160px; object-fit: contain;">
+          </a>
+          <p class="footer-desc">
+            O ecossistema definitivo de ERP & CRM conversacional para barbearias modernas. Tecnologia de ponta, agendamento interativo 24/7 e gestão simplificada.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Produto</h4>
+          <a href="#recursos">Recursos & Funcionalidades</a>
+          <a href="#simulador">Simulador do Chat</a>
+          <a href="#vantagens">Vantagens Katros</a>
+          <a href="#planos">Planos e Preços</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Módulos</h4>
+          <a href="#recursos">Chat Conversacional</a>
+          <a href="#recursos">Clube de Assinaturas</a>
+          <a href="#recursos">Gestão de Comissões</a>
+          <a href="#recursos">Controle de Estoque</a>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Atendimento VIP</h4>
+          <p><i data-lucide="message-circle" class="text-emerald w-4 h-4 inline mr-1"></i> WhatsApp: (44) 99941-9907</p>
+          <p><i data-lucide="clock" class="text-blue w-4 h-4 inline mr-1"></i> Seg a Sex: 09h às 18h</p>
+          <p><i data-lucide="shield-check" class="text-blue w-4 h-4 inline mr-1"></i> Dados 100% Seguros</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Katros (Katros Technologies). Todos os direitos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Termos de Uso</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Segurança</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE CHECKOUT / CONTATO RÁPIDO DO PLANO -->
+  <dialog class="plan-modal" id="plan-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" aria-label="Fechar modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      
+      <div class="modal-header">
+        <div class="modal-icon bg-blue-glow">
+          <i data-lucide="check-circle-2" class="w-6 h-6 text-blue"></i>
+        </div>
+        <h3 id="modal-plan-title">Plano Selecionado</h3>
+        <p id="modal-plan-price" class="modal-price">R$ 99,90/mês</p>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-info">Excelente escolha! Preencha os dados da sua barbearia para ativar seu plano em minutos ou falar direto com nosso consultor no WhatsApp.</p>
+        
+        <form id="plan-signup-form" class="signup-form">
+          <div class="form-group">
+            <label for="shop-name">Nome da Barbearia *</label>
+            <input type="text" id="shop-name" placeholder="Ex: Barbearia VIP" required>
+          </div>
+          <div class="form-group">
+            <label for="owner-name">Seu Nome *</label>
+            <input type="text" id="owner-name" placeholder="Ex: Lucas Fernando" required>
+          </div>
+          <div class="form-group">
+            <label for="whatsapp-phone">WhatsApp para Contato *</label>
+            <input type="tel" id="whatsapp-phone" placeholder="(11) 99999-9999" required>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-glow btn-full mt-4">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Ativar Plano via WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js?v=8"></script>
+</body>
+</html>
