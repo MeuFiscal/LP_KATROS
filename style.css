@@ -2798,10 +2798,16 @@ video {
   }
 
   .start-btn-text {
+    position: absolute;
+    left: 50%;
+    width: max-content;
+    max-width: calc(100% - 104px);
     min-width: 0;
     overflow: hidden;
     font-size: clamp(.86rem, 4vw, 1rem);
+    text-align: center;
     text-overflow: ellipsis;
+    transform: translateX(-50%);
     white-space: nowrap;
   }
 
